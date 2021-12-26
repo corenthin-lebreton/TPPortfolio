@@ -1,0 +1,158 @@
+@media (max-width: 715px){
+	#titre{
+		font-size: 20px;
+	}
+
+	#contenu{
+		overflow-x: hidden;
+        overflow-y: auto;
+	}
+
+
+	div#footer{
+		width: 30%;
+		height: 30%;
+	}
+
+	p#foot{
+		text-align: left;
+		font-size: 10px;
+		margin-left: auto;
+	}
+
+}
+
+@media (max-width: 660px){
+	#titre{
+		font-size: 10px
+	}
+
+	#contenu{
+		overflow-x: hidden;
+        overflow-y: auto;
+	}
+
+
+
+}
+
+h2#titre{
+	text-align: center;
+	letter-spacing: 0.04em;
+	font-size: 42px;
+	animation: fadeIn 2s;
+	font-family: "Gill Sans";
+	color: #fff;
+}
+
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background: url("../img/fond.png") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+nav#menu-nav{
+	margin-top: 100px;
+}
+
+h5#offcanvasNavbarLabel{
+	padding-left: 42%;
+}
+
+button#button{
+	transition: transform .1s;
+	
+}
+
+button.navbar-toggler:hover{
+	-ms-transform: scale(0.75);
+	-webkit-transform: scale(0.75);
+	transform: scale(0.75);
+}
+
+
+div#contenu {
+	width:80px;
+	height:400px;
+	background-color:#3d3d3d;
+	margin-top: 150px;
+	float: none;
+	position: fixed;
+	padding-top: 110px;
+	width: 35%;
+}
+
+p#present{
+	color: white;
+	letter-spacing: 1px;
+	border-left: solid 5px white;
+	padding-left: 15px;
+}
+
+
+div.offcanvas-body .nav-item #home{
+	color: black;
+}
+div.offcanvas-body .nav-item #compet{
+	color: black;
+}
+div.offcanvas-body .nav-item #info{
+	color: black;
+}
+
+div#footer{
+
+	width:1920px;
+	height:100px;
+	background-color:#3d3d3d;
+	margin-top: 835px;
+	position: fixed;
+	
+}
+
+
+p#foot{
+	text-align: center;
+	color: #fff;
+	margin-top: 15px;
+}
+
+a#insta svg{
+	margin-left: 35%;
+	size: 36px;
+	transition: transform .1s;
+}
+a#insta svg:hover{
+	-ms-transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+
+a#linked svg{
+	margin-left: 13.5%;
+	size: 36px;
+	transition: transform .1s;
+}
+
+a#linked svg:hover{
+	-ms-transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+a#twitter svg{
+	margin-left: 13.5%;
+	size: 36px;
+	transition: transform .1s;
+}
+
+a#twitter svg:hover{
+	-ms-transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}

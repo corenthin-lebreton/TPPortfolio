@@ -1,0 +1,263 @@
+@media (max-width: 715px){
+	#titre{
+		font-size: 20px;
+	}
+
+	#contenu{
+		overflow-x: hidden;
+        overflow-y: auto;
+	}
+
+
+	div#footer{
+		width: 30%;
+		height: 30%;
+	}
+
+	p#foot{
+		text-align: left;
+		font-size: 10px;
+		margin-left: auto;
+	}
+
+}
+
+@media (max-width: 660px){
+	#titre{
+		font-size: 80px
+	}
+
+	#contenu{
+		overflow-x: hidden;
+        overflow-y: auto;
+	}
+
+	div#html{
+		width: 180px;
+	}
+
+
+}
+
+@media (max-width: 500px){
+	div#html{
+		width: 30%;
+	}
+}
+
+
+
+
+
+
+h2#titre{
+	text-align: center;
+	letter-spacing: 0.04em;
+	font-size: 42px;
+	animation: fadeIn 2s;
+	font-family: "Gill Sans";
+	color: white;
+}
+
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background: url("../img/fond.png") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+
+nav#menu-nav{
+	margin-top: 100px;
+}
+
+
+h5#offcanvasNavbarLabel{
+	padding-left: 42%;
+}
+
+
+button#button{
+	transition: transform .1s;
+	
+}
+
+
+button.navbar-toggler:hover{
+	-ms-transform: scale(0.75);
+	-webkit-transform: scale(0.75);
+	transform: scale(0.75);
+}
+
+div.offcanvas-body .nav-item #home{
+	color: black;
+}
+div.offcanvas-body .nav-item #compet{
+	color: black;
+}
+div.offcanvas-body .nav-item #info{
+	color: black;
+}
+
+/*-------------------------------------------Jauge de compétences-----------------------------------------*/
+
+.skill{
+	width: 160px;
+	height: 160px;
+	/*background: cornflowerblue;*/
+	position: relative;
+}
+
+.outter{
+	 height: 160px;
+	 width: 160px;
+	 border-radius: 50%;
+	 padding: 20px;
+	 box-shadow: 6px 6px 10 px -1px rgba(0, 0, 0, 0.15),
+	 								-6px -6px 10px -1px rgba(255, 255, 255, 0.70);
+}
+
+.inner{
+	height: 120px;
+	width: 120px;
+	border-radius:50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+				inset -4px -4px 6px -1px rgba(255, 255, 2550, 0.7),
+				-0.5px -0.5px 0px rgba(255, 255, 255,1),
+				0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+				0px 12 px 10 px -10px rgba(0, 0, 0, 0.05);
+
+}
+/* --- Progress Bar HTML ---*/
+
+#number{
+	font-weight: 600px;
+	color: #555;
+}
+
+circle{
+	fill: none;
+	stroke: url(#GradientColor);
+	stroke-width: 20px;
+	stroke-dasharray: 472;
+	stroke-dashoffset: 472;
+	animation: html 2s linear forwards;
+}
+
+
+svg{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+@keyframes html{
+	100%{
+		stroke-dashoffset: 165;
+	}
+}
+
+
+
+div#html{
+	margin-top: 300px;
+	margin-left: 60px;
+}
+
+div#number{
+	font-family: Impact;
+	color: white;
+}
+
+h5#ht{
+	margin-left: 50px;
+	margin-top: 5px;
+	color: white;
+}
+
+
+/* --- Progress Bar CSS ---  */
+div#css{
+	margin-left: 45px;
+	margin-top: 55px;
+	align-items: center;
+}
+
+
+
+
+circle#circlecss{
+	fill: none;
+	stroke: url(#GradientColor);
+	stroke-width: 20px;
+	stroke-dasharray: 472;
+	stroke-dashoffset: 472;
+	animation: css 2.5s linear forwards;
+}
+
+@keyframes css{
+	100%{
+		stroke-dashoffset: 236;
+	}
+}
+
+div#numbercss{
+	font-family: Impact;
+	color: white;
+}
+
+h5#CSS{
+	margin-left: 55px;
+	margin-top: 5px;
+	color: white;
+}
+
+
+
+/*---Progress Bar javaScipt---*/
+
+
+div#js{
+	margin-left: 45px;
+	margin-top: 55px;
+	align-items: center;
+}
+
+
+
+
+circle#circlejs{
+	fill: none;
+	stroke: url(#GradientColor);
+	stroke-width: 20px;
+	stroke-dasharray: 472;
+	stroke-dashoffset: 472;
+	animation: js 2.5s linear forwards;
+}
+
+@keyframes js{
+	100%{
+		stroke-dashoffset: 378;
+	}
+}
+
+div#numberjs{
+	font-family: Impact;
+	color: white;
+}
+
+h5#JS{
+	margin-left: 55px;
+	margin-top: 5px;
+	color: white;
+}
+
+
+
+
