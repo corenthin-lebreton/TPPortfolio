@@ -102,6 +102,31 @@ div.offcanvas-body .nav-item #info{
 	color: black;
 }
 
+.loader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: black;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.disparition{
+	animation: fadeout 1s forwards;
+}
+
+@keyframes fadeout {
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+
+
 /*-------------------------------------------Jauge de compétences-----------------------------------------*/
 
 .skill{
@@ -166,8 +191,8 @@ svg{
 
 
 div#html{
-	margin-top: 300px;
 	margin-left: 60px;
+	margin-top:180px;
 }
 
 div#number{
@@ -185,7 +210,7 @@ h5#ht{
 /* --- Progress Bar CSS ---  */
 div#css{
 	margin-left: 45px;
-	margin-top: 55px;
+	margin-top: 2px;
 	align-items: center;
 }
 
@@ -219,16 +244,12 @@ h5#CSS{
 }
 
 
-
 /*---Progress Bar javaScipt---*/
 
-
-div#js{
-	margin-left: 45px;
-	margin-top: 55px;
-	align-items: center;
+svg#js{
+	margin-left: 390px;
+	margin-top: 0;
 }
-
 
 
 
@@ -250,14 +271,51 @@ circle#circlejs{
 div#numberjs{
 	font-family: Impact;
 	color: white;
+	margin-left: 795px;
 }
 
 h5#JS{
-	margin-left: 55px;
+	margin-left: 24%;
 	margin-top: 5px;
 	color: white;
 }
 
 
 
+/*---Progress Bar C#---*/
 
+
+div#csharp{
+	margin-left: 45px;
+	margin-top: 2px;
+	align-items: center;
+}
+
+
+
+
+circle#circlecsharp{
+	fill: none;
+	stroke: url(#GradientColor);
+	stroke-width: 20px;
+	stroke-dasharray: 472;
+	stroke-dashoffset: 472;
+	animation: css 2.5s linear forwards;
+}
+
+@keyframes css{
+	100%{
+		stroke-dashoffset: 236;
+	}
+}
+
+div#numbercsharp{
+	font-family: Impact;
+	color: white;
+}
+
+h5#CSHARP{
+	margin-left: 55px;
+	margin-top: 5px;
+	color: white;
+}

@@ -156,3 +156,26 @@ a#twitter svg:hover{
 	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
 }
+
+.loader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: black;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.disparition{
+	animation: fadeout 1s forwards;
+}
+
+@keyframes fadeout {
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
