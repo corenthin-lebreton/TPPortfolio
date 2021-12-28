@@ -1,7 +1,7 @@
 let loader = document.querySelector(".loader");
 
-window.addEventListener("load", vanish);
+window.addEventListener("load", invisible);
 
-function vanish() {
+function invisible() {
     loader.classList.add("disparition");
 }

@@ -1,3 +1,12 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	background: url("../img/fond.png") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
 @media (max-width: 715px){
 	#titre{
 		font-size: 20px;
@@ -46,10 +55,6 @@
 }
 
 
-
-
-
-
 h2#titre{
 	text-align: center;
 	letter-spacing: 0.04em;
@@ -59,15 +64,6 @@ h2#titre{
 	color: white;
 }
 
-
-body{
-	margin: 0px;
-	padding: 0px;
-	background: url("../img/fond.png") no-repeat center;
-	background-size: cover;
-	background-attachment: fixed;
-
-}
 
 
 nav#menu-nav{
@@ -112,6 +108,7 @@ div.offcanvas-body .nav-item #info{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	z-index: 1;
 }
 
 .disparition{
@@ -126,196 +123,34 @@ div.offcanvas-body .nav-item #info{
 }
 
 
-
 /*-------------------------------------------Jauge de compétences-----------------------------------------*/
 
-.skill{
-	width: 160px;
-	height: 160px;
-	/*background: cornflowerblue;*/
+#circlebar{
+	margin-top: 30%;
+	margin-left: -2%;
+	text-align: center;
+	font-family: Tahoma;
+}
+
+#circlebar .round{
+	min-height: 255px;
+	margin-top: 35%;
 	position: relative;
+	margin-bottom: 20px;
 }
 
-.outter{
-	 height: 160px;
-	 width: 160px;
-	 border-radius: 50%;
-	 padding: 20px;
-	 box-shadow: 6px 6px 10 px -1px rgba(0, 0, 0, 0.15),
-	 								-6px -6px 10px -1px rgba(255, 255, 255, 0.70);
-}
-
-.inner{
-	height: 120px;
-	width: 120px;
-	border-radius:50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-				inset -4px -4px 6px -1px rgba(255, 255, 2550, 0.7),
-				-0.5px -0.5px 0px rgba(255, 255, 255,1),
-				0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-				0px 12 px 10 px -10px rgba(0, 0, 0, 0.05);
-
-}
-/* --- Progress Bar HTML ---*/
-
-#number{
-	font-weight: 600px;
-	color: #555;
-}
-
-circle{
-	fill: none;
-	stroke: url(#GradientColor);
-	stroke-width: 20px;
-	stroke-dasharray: 472;
-	stroke-dashoffset: 472;
-	animation: html 2s linear forwards;
-}
-
-
-svg{
+#circlebar .round strong{
 	position: absolute;
-	top: 0;
-	left: 0;
+	top:50%;
+	left: 50%;
+	margin-top: -80px;
+	transform: translate(-50%);
+	font-size: 40px;
+	font-weight: 100;
+
 }
 
-@keyframes html{
-	100%{
-		stroke-dashoffset: 165;
-	}
-}
-
-
-
-div#html{
-	margin-left: 60px;
-	margin-top:180px;
-}
-
-div#number{
-	font-family: Impact;
-	color: white;
-}
-
-h5#ht{
-	margin-left: 50px;
-	margin-top: 5px;
-	color: white;
-}
-
-
-/* --- Progress Bar CSS ---  */
-div#css{
-	margin-left: 45px;
-	margin-top: 2px;
-	align-items: center;
-}
-
-
-
-
-circle#circlecss{
-	fill: none;
-	stroke: url(#GradientColor);
-	stroke-width: 20px;
-	stroke-dasharray: 472;
-	stroke-dashoffset: 472;
-	animation: css 2.5s linear forwards;
-}
-
-@keyframes css{
-	100%{
-		stroke-dashoffset: 236;
-	}
-}
-
-div#numbercss{
-	font-family: Impact;
-	color: white;
-}
-
-h5#CSS{
-	margin-left: 55px;
-	margin-top: 5px;
-	color: white;
-}
-
-
-/*---Progress Bar javaScipt---*/
-
-svg#js{
-	margin-left: 390px;
-	margin-top: 0;
-}
-
-
-
-circle#circlejs{
-	fill: none;
-	stroke: url(#GradientColor);
-	stroke-width: 20px;
-	stroke-dasharray: 472;
-	stroke-dashoffset: 472;
-	animation: js 2.5s linear forwards;
-}
-
-@keyframes js{
-	100%{
-		stroke-dashoffset: 378;
-	}
-}
-
-div#numberjs{
-	font-family: Impact;
-	color: white;
-	margin-left: 795px;
-}
-
-h5#JS{
-	margin-left: 24%;
-	margin-top: 5px;
-	color: white;
-}
-
-
-
-/*---Progress Bar C#---*/
-
-
-div#csharp{
-	margin-left: 45px;
-	margin-top: 2px;
-	align-items: center;
-}
-
-
-
-
-circle#circlecsharp{
-	fill: none;
-	stroke: url(#GradientColor);
-	stroke-width: 20px;
-	stroke-dasharray: 472;
-	stroke-dashoffset: 472;
-	animation: css 2.5s linear forwards;
-}
-
-@keyframes css{
-	100%{
-		stroke-dashoffset: 236;
-	}
-}
-
-div#numbercsharp{
-	font-family: Impact;
-	color: white;
-}
-
-h5#CSHARP{
-	margin-left: 55px;
-	margin-top: 5px;
-	color: white;
+#circlebar span img{
+	display: block;
+	margin-left: 125px;
 }
