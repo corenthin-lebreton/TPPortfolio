@@ -94,64 +94,56 @@
   <!--Body-->
 
   <main>
-    <!----------------------------------------------------Progress bar HTML------------------------------------------------->
 
-    <section id="circlebar">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="round" data-value="0.80" data-size="200" data-thickeness="12">
-
-              <span><img src="https://img.icons8.com/color/48/000000/html-5--v1.png" />
-
-              </span>
-
+    <div class="container">
+      <div class="card">
+        <div class="box">
+          <div class="percent">
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number">
+              <h2>75<span>%</span></h2>
             </div>
           </div>
-
-
-          <div class="col-md-3">
-            <div class="round" data-value="0.50" data-size="200" data-thickeness="12">
-
-
-              <span><img src="https://img.icons8.com/color/48/000000/css3.png" />
-
-              </span>
-
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="round" data-value="0.40" data-size="200" data-thickeness="12">
-
-              <span><img src="https://img.icons8.com/color/48/000000/javascript--v1.png" />
-
-              </span>
-
-            </div>
-          </div>
-
-
-          <div class="col-md-3">
-            <div class="round" data-value="0.25" data-size="200" data-thickeness="12">
-
-              <span><img src=" https://img.icons8.com/color/50/000000/c-plus-plus-logo.png" />
-
-              </span>
-
-            </div>
-          </div>
-
-
-
-
-
-
-
+          <h2 class="texte">HTML</h2>
         </div>
       </div>
-    </section>
+
+      <div class="card">
+        <div class="box">
+          <div class="percent">
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number">
+              <h2>60<span>%</span></h2>
+            </div>
+          </div>
+          <h2 class="texte">CSS</h2>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="box">
+          <div class="percent">
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70"></circle>
+            </svg>
+            <div class="number">
+              <h2>45<span>%</span></h2>
+            </div>
+          </div>
+          <h2 class="texte">JS</h2>
+        </div>
+      </div>
+
+
+
+    </div>
 
   </main>
 
@@ -175,22 +167,6 @@
     </script>
 
 
-  <script>
-
-    // Animation progress bar
-
-
-    function circle(el) {
-      $(el).circleProgress({ fill: { color: '#ff5c5c' } })
-        .on('circle-animation-progress', function (event, progress, stepValue) {
-          $(this).find('strong').text(String(stepValue.toFixed(1)) + '%'
-          );
-        });
-    };
-
-    circle('.round');
-
-  </script>
 
 
 </body>
