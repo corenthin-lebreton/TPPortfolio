@@ -14,7 +14,7 @@ body{
 	justify-content: center;
 	min-height: 100vh;
 	flex-direction: column;
-	overflow: hidden;
+
 
 }
 
@@ -266,7 +266,7 @@ svg circle:nth-child(2){
 
 
 footer{
-	margin-bottom: 700px;
+	margin-bottom: -100px;
 
 	width: 1920px;
 	height: 263px;
