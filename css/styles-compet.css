@@ -6,39 +6,18 @@
 
 
 body{
-	background: url("../img/fond.png") no-repeat center;
+	background: url("../img/fond1.png") no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	min-height: 100vh;
+	flex-direction: column;
+	overflow: hidden;
 
 }
 
-@media (max-width: 715px){
-	#titre{
-		font-size: 20px;
-	}
-
-	#contenu{
-		overflow-x: hidden;
-        overflow-y: auto;
-	}
-
-
-	div#footer{
-		width: 30%;
-		height: 30%;
-	}
-
-	p#foot{
-		text-align: left;
-		font-size: 10px;
-		margin-left: auto;
-	}
-
-}
 
 @media (max-width: 660px){
 	#titre{
@@ -65,17 +44,18 @@ body{
 
 
 h2#titre{
-	display: flex;
+
 	text-align: center;
 	letter-spacing: 0.04em;
 	font-size: 42px;
 	animation: fadeIn 2s;
 	font-family: "Gill Sans";
 	color: white;
-	margin-top: -75%;
+	padding-top: 5%;
 	align-items: center;
 	justify-content: center;
-	margin-right: -130%;
+	margin-right: -10%;
+
 }
 
 
@@ -122,7 +102,7 @@ div.offcanvas-body .nav-item #info{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	z-index: 1;
+	z-index: 2000;
 }
 
 .disparition{
@@ -165,7 +145,7 @@ svg circle:nth-child(2){
 
 .card:nth-child(1) svg circle:nth-child(2){
 	stroke-dashoffset: calc(440 - (440 * 75) / 100);
-	stroke: #00ff43;
+	stroke: #ff6600;
 }
 .card:nth-child(2) svg circle:nth-child(2){
 	stroke-dashoffset: calc(440 - (440 * 60) / 100);
@@ -173,14 +153,22 @@ svg circle:nth-child(2){
 }
 .card:nth-child(3) svg circle:nth-child(2){
 	stroke-dashoffset: calc(440 - (440 *45) / 100);
+	stroke: #ffee04;
+}
+
+.card:nth-child(4) svg circle:nth-child(2){
+	stroke-dashoffset: calc(440 - (440 *20) / 100);
 	stroke: #ff04f7;
 }
 
+
 .container{
-	position: relative;
-	width: 900px;
+	
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+	padding-bottom: 10%;
+	
 }
 
 .container .card{
@@ -196,8 +184,8 @@ svg circle:nth-child(2){
 	overflow: hidden;
 	transition: 0.5s;
 	margin-right: 60px;
-	margin-top: 70%;
-	margin-left: -65%;
+	margin-top:15%;
+	margin-left: 30px;
 
 }
 
@@ -263,18 +251,165 @@ svg circle:nth-child(2){
 	color: #fff;
 }
 
-.texte{
+.logo-bar{
 	position: relative;
-	color: rgb(199, 181, 181);
 	margin-top: 20px;
-	font-weight: 700;
-	font-size: 18px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
 	transition: 0.5s;
 
 }
 
 .card:hover .text{
+	color: #fff;
+}
+
+/* Footer*/
+
+
+footer{
+	margin-bottom: 700px;
+
+	width: 1920px;
+	height: 263px;
+	padding: 30px 20px;
+	background:#3d3d3d;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+footer .container{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+footer .container .sec{
+	margin-right: 30px;
+}
+
+
+footer .container .sec.aboutme{
+	width: 40%;
+}
+
+
+
+footer .container h2{
+	position: relative;
+	color: #fff;
+	font-weight: 500;
+	margin-bottom: 15px;
+	margin-left: 50px;
+}
+
+footer .container  h2:before{
+	content: '';
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 50px;
+	height: 2px;
+	background: #f00;
+}
+
+
+
+.sci{
+	margin-top:20px;
+	display: flex;
+	
+
+}
+
+
+.sci li{
+	list-style: none;
+
+	padding-right: 30px;
+}
+
+
+.sci li a{
+
+display: inline-block;
+width: 48px;
+height: 48px;
+background: #222;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 10px;
+text-decoration: none;
+border-radius: 4px;
+margin-left: 1px;
+}
+
+
+a#insta img{
+	margin-left: 5%;
+	transition: transform .1s;
+	padding-right: 2px;
+}
+
+
+a#insta img:hover{
+	-ms-transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+
+a#linked img{
+	margin-left: 11%;
+	transition: transform .1s;
+	padding-right: 4px;
+}
+
+
+a#linked img:hover{
+	-ms-transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+
+a#twitter img{
+	margin-left: 13.5%;
+	transition: transform .1s;
+	padding-right: 4px;
+}
+
+
+a#twitter img:hover{
+	-ms-transform: scale(0.5);
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+}
+
+
+
+
+
+.contact{
+	position: relative;
+	width: 25%;
+
+}
+
+.contact ul li{
+	list-style: none;
+}
+
+
+
+.contact ul li a{
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 10px;
+	display: inline-block;	
+}
+
+.contact ul li span{
 	color: #fff;
 }
