@@ -14,6 +14,7 @@ body{
 	justify-content: center;
 	min-height: 100vh;
     flex-direction: column;
+	overflow: hidden;
 
 
 }
@@ -24,7 +25,7 @@ h2#titre{
 	font-size: 42px;
 	font-family: "Gill Sans";
 	color: #fff;
-    margin-top: -30%;
+    margin-top: -20%;
     position: static;
 }
 
@@ -64,18 +65,18 @@ div.offcanvas-body .nav-item #info{
 /*Centres d'interets*/
 
 .act{
-    margin-left: -25%;
+    margin-right: -30%;
     margin-bottom: 5%;
 }
 
 div.image{
     display: inline-block;
     background: #222;
-    border-radius: 8px;
-    padding: 30px 45px;
+    border-radius: 10px;
+    padding: 10px 30px;
     text-align: center;
     margin-right: 30px;
-    padding-bottom: 30%;
+    padding-bottom: 5%;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -95,6 +96,12 @@ div.image{
     color: #fff;
 
 }
+
+
+.image p{
+	color: #fff;
+}
+
 
 
 /*Footer*/
