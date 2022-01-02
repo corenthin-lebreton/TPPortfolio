@@ -69,6 +69,7 @@ h2#titre{
 	position: fixed;
 	margin-left: 40%;
 	max-width: 500px;
+	text-shadow: 0 0 5px black;
 }
 
 
@@ -119,13 +120,13 @@ div#contenu {
 	position: fixed;
 	padding-top: 110px;
 	width: 35%;
+	border: 1px solid white;
 	
 }
 
 p#present{
 	color: white;
 	letter-spacing: 1px;
-	border-left: solid 5px white;
 	padding-left: 15px;
 }
 
