@@ -1,4 +1,3 @@
-
 // ----récupérer le titre---
 const titre = document.getElementById("titre");
 

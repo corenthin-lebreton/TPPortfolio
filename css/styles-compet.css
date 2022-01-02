@@ -1,9 +1,40 @@
+
+/* Loader*/
+
+.loader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: black;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2000;
+}
+
+.disparition{
+	animation: fadeout 1s forwards;
+}
+
+@keyframes fadeout {
+	100%{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+
+
+
+/* Body */
+
+
 *{
 	margin: 0;
 	padding: 0;
 }
-
-
 
 body{
 	background: url("../img/fond1.png") no-repeat center;
@@ -69,29 +100,6 @@ div.offcanvas-body .nav-item #info{
 	color: black;
 }
 
-.loader{
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: black;
-	height: 100%;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 2000;
-}
-
-.disparition{
-	animation: fadeout 1s forwards;
-}
-
-@keyframes fadeout {
-	100%{
-		opacity: 0;
-		visibility: hidden;
-	}
-}
 
 
 /*-------------------------------------------Jauge de compétences-----------------------------------------*/
