@@ -3,8 +3,6 @@
 	padding: 0;
 }
 
-
-
 body{
 	background: url("../img/fond1.png") no-repeat center;
 	background-size: cover;
@@ -23,12 +21,12 @@ h2#titre{
 	text-align: center;
 	letter-spacing: 0.04em;
 	font-size: 42px;
-	font-family: "Gill Sans";
+	font-family: "Arial";
 	color: #fff;
-    margin-top: -20%;
+    margin-top: -35%;
     position: static;
+	margin-left: 40px;
 }
-
 
 nav#menu-nav{
 	margin-top: 100px;
@@ -59,8 +57,6 @@ div.offcanvas-body .nav-item #compet{
 div.offcanvas-body .nav-item #info{
 	color: black;
 }
-
-
 
 /*Centres d'interets*/
 
@@ -100,6 +96,8 @@ div.image{
 
 .image p{
 	color: #fff;
+	margin-top: 25px;
+	font-family: Roboto;
 }
 
 
@@ -107,7 +105,7 @@ div.image{
 /*Footer*/
 
 footer{
-	margin-bottom: -10%;
+	margin-bottom: -12%;
 
 	width: 1920px;
 	height: 263px;
@@ -134,8 +132,6 @@ footer .container .sec.aboutme{
 	width: 40%;
 }
 
-
-
 footer .container h2{
 	position: relative;
 	color: #fff;
@@ -154,15 +150,12 @@ footer .container  h2:before{
 	background: #f00;
 }
 
-
-
 .sci{
-	margin-top:20px;
+	margin-top:40px;
 	display: flex;
 	
 
 }
-
 
 .sci li{
 	list-style: none;

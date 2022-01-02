@@ -1,6 +1,4 @@
-
 /* Loader du site */
-
 
 .loader{
 	position: fixed;
@@ -62,14 +60,15 @@ body{
 h2#titre{
 	text-align: center;
 	letter-spacing: 0.04em;
-	font-size: 42px;
+	font-size: 34px;
 	animation: fadeIn 2s;
-	font-family: "Gill Sans";
+	font-family: "Arial";
 	color: #fff;
 	margin-top: -15%;
 	display: flex;
 	position: fixed;
 	margin-left: 40%;
+	max-width: 500px;
 }
 
 
@@ -114,7 +113,7 @@ div.offcanvas-body .nav-item #info{
 div#contenu {
 	width:80px;
 	height:400px;
-	margin-top: -10%;
+	margin-top: -8%;
 	background-color:#3d3d3d;
 	display: flex;
 	position: fixed;
@@ -137,9 +136,13 @@ img#logo{
 	height: 450px;
 	width: 320px;
 	position: fixed;
-	margin-top: -10%;
+	margin-top: -8%;
 	margin-left: 75%;
 	margin-bottom: 10px;
+	border-radius: 2px;
+	border: white solid 2px;
+	max-width: 500px;
+	
 }
 
 
@@ -200,7 +203,7 @@ footer .container  h2:before{
 
 
 .sci{
-	margin-top:20px;
+	margin-top:40px;
 	display: flex;
 	
 

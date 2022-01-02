@@ -20,38 +20,13 @@ body{
 
 }
 
-
-@media (max-width: 660px){
-	#titre{
-		font-size: 80px
-	}
-
-	#contenu{
-		overflow-x: hidden;
-        overflow-y: auto;
-	}
-
-	div#html{
-		width: 180px;
-	}
-
-
-}
-
-@media (max-width: 500px){
-	div#html{
-		width: 30%;
-	}
-}
-
-
 h2#titre{
 
 	text-align: center;
 	letter-spacing: 0.04em;
 	font-size: 42px;
 	animation: fadeIn 2s;
-	font-family: "Gill Sans";
+	font-family: "Arial";
 	color: white;
 	padding-top: 5%;
 	align-items: center;
@@ -146,15 +121,15 @@ svg circle:nth-child(2){
 }
 
 .card:nth-child(1) svg circle:nth-child(2){
-	stroke-dashoffset: calc(440 - (440 * 75) / 100);
+	stroke-dashoffset: calc(440 - (440 * 60) / 100);
 	stroke: #ff6600;
 }
 .card:nth-child(2) svg circle:nth-child(2){
-	stroke-dashoffset: calc(440 - (440 * 60) / 100);
+	stroke-dashoffset: calc(440 - (440 * 45) / 100);
 	stroke: #00a1ff;
 }
 .card:nth-child(3) svg circle:nth-child(2){
-	stroke-dashoffset: calc(440 - (440 *45) / 100);
+	stroke-dashoffset: calc(440 - (440 *30) / 100);
 	stroke: #ffee04;
 }
 
@@ -318,7 +293,7 @@ footer .container  h2:before{
 
 
 .sci{
-	margin-top:20px;
+	margin-top:40px;
 	display: flex;
 	
 
